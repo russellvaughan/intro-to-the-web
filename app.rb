@@ -17,8 +17,10 @@ get '/scream/whatever' do
   "SCREAM!!! whatever"
 end
 
-get '/cat' do
-  "<img style='border:20px dashed pink' src = 'http://bit.ly/1eze8aE'>"
+get '/named-cat' do
+  p params
+  @name = params[:name]
+  erb(:index)
 end
 
 #<img style='border:1px solid #000000' src="..." />
