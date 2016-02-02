@@ -13,5 +13,6 @@ get '/new_stuff' do
 end
 
 get '/cat' do
+  @name = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
 end
